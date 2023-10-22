@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --purple: #5280e2;
+  --green: #15cdcb;
+  --bg-dark: #212226;
+  --light-grey: #e0dede;
+  --medium-grey: #e41111;
+  --color-title: #0d6efd;
+  --menu-height: 65px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0;
+  position: relative;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+p {
+  color: var(--medium-grey);
+}
+h1 {
+  font-size: 44px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 60vh);
+}
+
+/* nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-dark);
+  height: 65px;
+  margin: auto;
+  z-index: 99;
+  width: calc(100% - 40px);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+  padding: 0;
+}
+
+nav ul a {
+  font-size: 24px;
+  text-decoration: none;
+  color: rgb(211, 21, 21);
+}
+
+nav ul a svg {
+  display: none;
+}
+
+nav ul a:hover {
+  color: white;
+} */
+
+/*/////////////////////////// NAVBAR INICIO//////////////////////////////// */
+.navigation {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 0;
+}
+.navigation ul {
+  justify-content: space-around;
+  display: flex;
+  width: 350px;
+}
+
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: black;
+}
+
+.navigation ul li.active a .icon {
+  transform: translateY(-32px);
+}
+
+.navigation ul li a .text {
+  position: absolute;
+  color: #212226;
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.navigation ul li.active a .text {
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+.indicator {
+  position: absolute;
+  top: -100%;
+  width: 100px;
+  height: 100px;
+  background: rgb(7, 202, 7);
+  border-radius: 50%;
+  border: 6px solid #212226;
+  transition: 0.5s;
+}
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 100px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 0px -10px 0 0 #212226;
+}
+
+.indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  width: 20px;
+  height: 100px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: 0px -10px 0 0 #212226;
+}
+
+.navigation ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(70px * 0));
+}
+.navigation ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(70px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(70px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(70px * 3));
+}
+/* ///////////////////////NAVBAR FIM //////////////////////////////////////*/
+.content {
+  display: none;
+  opacity: 0;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 40vh;
+}
+
+.endereço {
+  margin-top: 25px;
+  padding: 0 20px;
+}
+
+.endereço .geocalizacao iframe {
+  border-radius: 5px;
+}
+
+/*////////////////////// AREA PARA CONTATO DA PAGINA//////// */
+.contact {
+  margin-top: 20px;
+  padding: 0 20px;
+  border-top: 15px solid rgb(19, 18, 16);
+}
+.contact .container-contact {
+  display: flex;
+  justify-content: center;
+}
+.contact .container-contact .whatsaap svg {
+  width: 45px;
+  height: 45px;
+  color: green;
+}
+
+.contact .container-contact .whatsaap,
+.contact .container-contact .adress,
+.contact .container-contact .telefone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.contact .container-contact .whatsaap p {
+  margin: 0;
+}
+
+footer {
+  margin-bottom: 130px;
+  width: 100%;
+  height: 65px;
+  text-align: center;
+  padding: 20px;
+  background: rgb(19, 18, 16);
+  /* position: fixed;
+  bottom: 0; */
+}
+
+/*/////////////////////// MEDIA QUERIES LAPTOP////////////////// */
+@media (max-width: 1000) {
+  nav ul a {
+    font-size: 24pt;
+  }
+
+  nav ul a svg {
+    display: none;
+  }
+}
+
+/*///////////////////////MEDIA QUERIES TABLETS //////////////////////////*/
+@media (max-width: 767px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/*///////////////////////MEDIA QUERIES CELULAR //////////////////////////*/
+@media (max-width: 480px) {
+  nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    top: unset;
+    padding: 0 15px;
+  }
+
+  nav ul a {
+    font-size: 12px;
+    color: var(--green);
+  }
+
+  nav ul a svg {
+    display: block;
+    margin: 0 auto 10px;
+  }
+  h1 {
+    font-size: 16pt;
+  }
+  footer {
+    margin-bottom: calc(var(--menu-height) + 0px);
+  }
+}
