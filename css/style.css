@@ -37,7 +37,7 @@ p {
   color: var(--medium-grey);
 }
 h1 {
-  font-size: 44px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -53,52 +53,18 @@ header {
   height: calc(100vh - 60vh);
 }
 
-/* nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--bg-dark);
-  height: 65px;
-  margin: auto;
-  z-index: 99;
-  width: calc(100% - 40px);
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
-  width: 100%;
-  padding: 0;
-}
-
-nav ul a {
-  font-size: 24px;
-  text-decoration: none;
-  color: rgb(211, 21, 21);
-}
-
-nav ul a svg {
-  display: none;
-}
-
-nav ul a:hover {
-  color: white;
-} */
-
 /*/////////////////////////// NAVBAR INICIO//////////////////////////////// */
 .navigation {
   width: 100%;
-  height: 70px;
-  background: #fff;
+  height: 100px;
+  background: #212226;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  position: fixed;
-  bottom: 0;
+  border-radius:0px 0px 20px 20px;
 }
+
 .navigation ul {
   justify-content: space-around;
   display: flex;
@@ -128,21 +94,22 @@ nav ul a:hover {
   position: relative;
   display: block;
   line-height: 75px;
-  font-size: 1.5em;
+  font-size: 2.5em;
   text-align: center;
   transition: 0.5s;
-  color: black;
+  color: rgb(141, 2, 2);
 }
 
 .navigation ul li.active a .icon {
-  transform: translateY(-32px);
+  transform: translateY(50px);
 }
 
 .navigation ul li a .text {
   position: absolute;
-  color: #212226;
-  font-weight: 400;
-  font-size: 0.75em;
+  top: 18px;
+  color: rgb(141, 2, 2);
+  font-weight: 900;
+  font-size: 0.95em;
   letter-spacing: 0.05em;
   transition: 0.5s;
   opacity: 0;
@@ -151,12 +118,13 @@ nav ul a:hover {
 
 .navigation ul li.active a .text {
   opacity: 1;
-  transform: translateY(10px);
+  transform: translateY(20px);
 }
 
 .indicator {
   position: absolute;
-  top: -100%;
+  left: calc(100% / 2 - 156px);
+  top: 30%;
   width: 100px;
   height: 100px;
   background: rgb(7, 202, 7);
@@ -189,18 +157,32 @@ nav ul a:hover {
 }
 
 .navigation ul li:nth-child(1).active ~ .indicator {
-  transform: translateX(calc(70px * 0));
+  transform: translateX(calc(80px * 0));
 }
 .navigation ul li:nth-child(2).active ~ .indicator {
-  transform: translateX(calc(70px * 1));
+  transform: translateX(calc(80px * 1));
 }
 .navigation ul li:nth-child(3).active ~ .indicator {
-  transform: translateX(calc(70px * 2));
+  transform: translateX(calc(80px * 2));
 }
 .navigation ul li:nth-child(4).active ~ .indicator {
-  transform: translateX(calc(70px * 3));
+  transform: translateX(calc(80px * 3));
 }
 /* ///////////////////////NAVBAR FIM //////////////////////////////////////*/
+
+/* ///////////////////////CARROUSEL INICIO //////////////////////////////////////*/
+.carousel-marcas{
+  padding-top: 35px; 
+}
+/* ///////////////////////CARROUSEL FIM //////////////////////////////////////*/
+
+/* ///////////////////////SERVICES INICIO //////////////////////////////////////*/
+.services{
+  padding: 10px;
+  border-top: 2px solid black;
+}
+/* ///////////////////////SERVICES FIM //////////////////////////////////////*/
+
 .content {
   display: none;
   opacity: 0;
@@ -250,7 +232,6 @@ nav ul a:hover {
 }
 
 footer {
-  margin-bottom: 130px;
   width: 100%;
   height: 65px;
   text-align: center;
