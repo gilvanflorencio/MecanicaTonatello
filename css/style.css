@@ -181,6 +181,11 @@ header {
   padding: 10px;
   border-top: 2px solid black;
 }
+
+.responsive-img{
+  width: 100%;
+  height: auto;
+}
 /* ///////////////////////SERVICES FIM //////////////////////////////////////*/
 
 .content {
@@ -243,13 +248,7 @@ footer {
 
 /*/////////////////////// MEDIA QUERIES LAPTOP////////////////// */
 @media (max-width: 1000) {
-  nav ul a {
-    font-size: 24pt;
-  }
-
-  nav ul a svg {
-    display: none;
-  }
+  
 }
 
 /*///////////////////////MEDIA QUERIES TABLETS //////////////////////////*/
@@ -261,23 +260,9 @@ footer {
 
 /*///////////////////////MEDIA QUERIES CELULAR //////////////////////////*/
 @media (max-width: 480px) {
-  nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    top: unset;
-    padding: 0 15px;
-  }
+ 
 
-  nav ul a {
-    font-size: 12px;
-    color: var(--green);
-  }
-
-  nav ul a svg {
-    display: block;
-    margin: 0 auto 10px;
-  }
+ 
   h1 {
     font-size: 16pt;
   }
@@ -285,3 +270,6 @@ footer {
     margin-bottom: calc(var(--menu-height) + 0px);
   }
 }
+
+
+
