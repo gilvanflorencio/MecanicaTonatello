@@ -208,32 +208,15 @@ header {
 }
 
 /*////////////////////// AREA PARA CONTATO DA PAGINA//////// */
-.contact {
-  margin-top: 20px;
-  padding: 0 20px;
-  border-top: 15px solid rgb(19, 18, 16);
-}
-.contact .container-contact {
-  display: flex;
-  justify-content: center;
-}
-.contact .container-contact .whatsaap svg {
-  width: 45px;
-  height: 45px;
-  color: green;
-}
 
-.contact .container-contact .whatsaap,
-.contact .container-contact .adress,
-.contact .container-contact .telefone {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-}
-.contact .container-contact .whatsaap p {
+.col a{
+ text-decoration: none;
+ }
+
+.col a p, span{
+  font-size: 0.9rem;
   margin: 0;
+  color: #212226;
 }
 
 footer {
@@ -270,6 +253,5 @@ footer {
     margin-bottom: calc(var(--menu-height) + 0px);
   }
 }
-
 
 
