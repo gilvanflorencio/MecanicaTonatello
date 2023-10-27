@@ -39,6 +39,7 @@ h1 {
   text-align: center;
 }
 h2 {
+  text-align:left;
   font-size: 1.2em;
   font-weight: bold;
   color: var(--bg-dark);
@@ -206,9 +207,6 @@ header {
 
 /*////////////////////// AREA PARA CONTATO DA PAGINA//////// */
 
-.col {
-  padding: 0;
-}
 .col a p {
   list-style: none;
   font-size: 1rem;
@@ -217,9 +215,7 @@ header {
   white-space: nowrap;
   padding: 0;
 }
-.col ul {
-  padding: 0;
-}
+
 
 .col li {
   list-style: none;
