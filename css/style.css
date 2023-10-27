@@ -39,7 +39,7 @@ h1 {
   text-align: center;
 }
 h2 {
-  text-align:left;
+  text-align: left;
   font-size: 1.2em;
   font-weight: bold;
   color: var(--bg-dark);
@@ -207,6 +207,15 @@ header {
 
 /*////////////////////// AREA PARA CONTATO DA PAGINA//////// */
 
+.col .whatsapp li p{
+  list-style: none;
+  font-size: 1rem;
+  margin: 0;
+  color: #212226;
+  white-space: nowrap;
+  padding: 0;
+  text-align: center;
+}
 .col a p {
   list-style: none;
   font-size: 1rem;
@@ -216,8 +225,10 @@ header {
   padding: 0;
 }
 
-
-.col li {
+.col .horario {
+  padding: 10px;
+}
+.col .horario li {
   list-style: none;
   font-size: 1rem;
   margin: 0;
@@ -226,9 +237,24 @@ header {
   padding: 0;
 }
 
-.col ul li span {
+.col .horario li span {
   float: left;
-  min-width: 40%;
+  min-width: 30%;
+}
+
+.col .redeSocial{
+  padding: 0;
+}
+.redeSocial .instagram {
+  margin: 15px 5px 5px 0;
+}
+
+.redeSocial li a {
+  font-size: 1rem;
+  margin: 0;
+  color: #212226;
+  white-space: nowrap;
+text-decoration: none;
 }
 
 footer {
@@ -248,14 +274,12 @@ footer {
 /*///////////////////////MEDIA QUERIES TABLETS //////////////////////////*/
 @media (max-width: 767px) {
   h1 {
-    font-size: 20px;
   }
 }
 
 /*///////////////////////MEDIA QUERIES CELULAR //////////////////////////*/
 @media (max-width: 480px) {
   h1 {
-    font-size: 16pt;
   }
   footer {
     margin-bottom: calc(var(--menu-height) + 0px);
