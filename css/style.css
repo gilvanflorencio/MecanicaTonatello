@@ -33,18 +33,15 @@ textarea {
   font-family: "Poppins", sans-serif;
   color: white;
 }
-p {
-  color: var(--medium-grey);
-}
 h1 {
-  font-size: 30px;
+  font-size: 3em;
+  color: var(--bg-dark);
   text-align: center;
 }
-
-h1,
 h2 {
-  font-weight: 400;
-  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--bg-dark);
 }
 
 header {
@@ -62,7 +59,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius:0px 0px 20px 20px;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .navigation ul {
@@ -171,18 +168,18 @@ header {
 /* ///////////////////////NAVBAR FIM //////////////////////////////////////*/
 
 /* ///////////////////////CARROUSEL INICIO //////////////////////////////////////*/
-.carousel-marcas{
-  padding-top: 35px; 
+.carousel-marcas {
+  padding-top: 35px;
 }
 /* ///////////////////////CARROUSEL FIM //////////////////////////////////////*/
 
 /* ///////////////////////SERVICES INICIO //////////////////////////////////////*/
-.services{
+.services {
   padding: 10px;
   border-top: 2px solid black;
 }
 
-.responsive-img{
+.responsive-img {
   width: 100%;
   height: auto;
 }
@@ -209,14 +206,33 @@ header {
 
 /*////////////////////// AREA PARA CONTATO DA PAGINA//////// */
 
-.col a{
- text-decoration: none;
- }
-
-.col a p, span{
-  font-size: 0.9rem;
+.col {
+  padding: 0;
+}
+.col a p {
+  list-style: none;
+  font-size: 1rem;
   margin: 0;
   color: #212226;
+  white-space: nowrap;
+  padding: 0;
+}
+.col ul {
+  padding: 0;
+}
+
+.col li {
+  list-style: none;
+  font-size: 1rem;
+  margin: 0;
+  color: #212226;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.col ul li span {
+  float: left;
+  min-width: 40%;
 }
 
 footer {
@@ -231,7 +247,6 @@ footer {
 
 /*/////////////////////// MEDIA QUERIES LAPTOP////////////////// */
 @media (max-width: 1000) {
-  
 }
 
 /*///////////////////////MEDIA QUERIES TABLETS //////////////////////////*/
@@ -243,9 +258,6 @@ footer {
 
 /*///////////////////////MEDIA QUERIES CELULAR //////////////////////////*/
 @media (max-width: 480px) {
- 
-
- 
   h1 {
     font-size: 16pt;
   }
@@ -253,5 +265,3 @@ footer {
     margin-bottom: calc(var(--menu-height) + 0px);
   }
 }
-
-
