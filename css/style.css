@@ -273,6 +273,23 @@ footer {
   bottom: 0; */
 }
 
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: #198754;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #02a526;
+}
+
+
 /*/////////////////////// MEDIA QUERIES LAPTOP////////////////// */
 
 /*///////////////////////MEDIA QUERIES TABLETS //////////////////////////*/

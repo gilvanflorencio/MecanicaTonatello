@@ -31,8 +31,8 @@
   <body>
     <div class="navigation">
       <ul>
-        <li class="list active">
-          <a href="#">
+        <li class="list active" id="#home">
+          <a href="home">
             <span class="icon">
               <ion-icon name="home-outline"></ion-icon>
             </span>
@@ -41,7 +41,7 @@
         </li>
 
         <li class="list">
-          <a href="#">
+          <a href="#carousel-marcas">
             <span class="icon">
               <ion-icon name="car-outline"></ion-icon>
             </span>
@@ -50,7 +50,7 @@
         </li>
 
         <li class="list">
-          <a href="#">
+          <a href="#contato">
             <span class="icon">
               <ion-icon name="person-outline"></ion-icon>
             </span>
@@ -58,8 +58,8 @@
           </a>
         </li>
 
-        <li class="list">
-          <a href="#">
+        <li class="list" >
+          <a href="#endereço">
             <span class="icon">
               <ion-icon name="map-outline"></ion-icon>
             </span>
@@ -70,7 +70,7 @@
       </ul>
     </div>
 
-    <section class="carousel-marcas">
+    <section class="carousel-marcas" id="carousel-marcas">
       <h1>Seu Carro em Boas Mãos</h1>
       <div id="owl-demo" class="owl-carousel owl-theme">
         <div class="item">
@@ -328,7 +328,7 @@
       </div>
     </section>
 
-    <div class="container colRede">
+    <div class="container colRede" id="contato">
       <div class="row">
         <div class="col">
           <h2 style="text-align: center">Contato</h2>
@@ -381,6 +381,7 @@
         2023. Tonatello Mêcanica Especializada. Todos os direitos reservados.
       </p>
     </footer>
+    <a href="#home" id="scrollToTopBtn">Topo</a>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
